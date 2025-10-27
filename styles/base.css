@@ -44,6 +44,11 @@ nav a:hover {
   text-decoration: overline;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 main {
   display: grid;
   grid-template-columns: 4fr 2fr;
@@ -54,6 +59,7 @@ main {
 }
 
 main h1 {
+  font-weight: 100;
   grid-column: 1/3;
 }
 
