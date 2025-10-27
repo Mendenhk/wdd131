@@ -32,6 +32,8 @@ nav a {
     flex: 1 1 auto;
     text-decoration: none;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 main {
@@ -45,5 +47,6 @@ main {
 footer {
     grid-column: 1 / 4;
     place-items: center;
-    background-color: lightgreen;
+    background-color: var(--banner-color);
+    color: white;
 }
