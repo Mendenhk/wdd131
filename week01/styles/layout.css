@@ -1,18 +1,37 @@
+:root {
+  --banner-color: rgb(73, 73, 151);
+  --nav-color: rgb(70, 59, 59);
+}
+
 body {
   display: grid;
   grid-template: auto 1fr auto / 3fr 1fr;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 header {
   grid-column: 1 / 4;
-  background-color: lightblue;
+  background-color: var(--banner-color);
+  text-align: center;
+  color: white;
+}
+
+header h1 span {
+  font-size: 25px;
+  color: yellow;
 }
 
 nav {
   display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(233, 90, 233);
+  /* justify-content: space-evenly; */
+  background-color: var(--nav-color);
   padding: 1rem;
+}
+
+nav a {
+  flex: 1 1 auto;
+  text-decoration: none;
+  text-align: center;
 }
 
 main {
