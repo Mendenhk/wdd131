@@ -19,10 +19,10 @@ header {
   padding: 1rem;
 }
 
-.name {
+/* .name {
   font-size: 25px;
   color: yellow;
-}
+} */
 
 nav {
   display: flex;
