@@ -3,6 +3,10 @@
   --nav-color: rgb(70, 59, 59);
 }
 
+* {
+  margin: 0;
+}
+
 header {
   background-color: var(--banner-color);
   text-align: center;
@@ -44,9 +48,9 @@ main {
   display: grid;
   grid-template-columns: 4fr 2fr;
   align-items: stretch;
-  background-color: rgb(243, 212, 154);
   max-width: 900px;
   margin: 0 auto;
+  gap: 0.5rem;
 }
 
 main h1 {
@@ -56,6 +60,9 @@ main h1 {
 .card {
   display: grid;
   grid-template-rows: auto 1fr;
+  border: 1px solid black;
+  border-radius: 10px;
+  gap: 0.5rem;
 }
 
 .card ul {
@@ -68,15 +75,42 @@ main h1 {
   background-color: var(--banner-color);
   color: white;
   padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card1 img {
   width: 150px;
 }
 
-.card1 {
+.aboutMe-div {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutMe-div img {
+  margin: 0 auto;
+}
+
+.slo-div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+}
+
+.slo-div h3 {
+  grid-column: 1/3;
+  text-align: center;
+  border-bottom: 3px solid lightgray;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.slo-div figure {
+  margin: 0;
 }
 
 footer {
@@ -84,4 +118,5 @@ footer {
   place-items: center;
   background-color: var(--banner-color);
   color: white;
+  margin-top: 1rem;
 }
