@@ -132,3 +132,13 @@ footer {
   color: white;
   margin-top: 1rem;
 }
+
+#currentYear {
+  text-align: center;
+  color: white;
+}
+
+#lastModified {
+  text-align: center;
+  color: white;
+}
