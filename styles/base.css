@@ -133,12 +133,7 @@ footer {
   margin-top: 1rem;
 }
 
-#currentYear {
-  text-align: center;
-  color: white;
-}
-
-#lastModified {
+#footer p {
   text-align: center;
   color: white;
 }
