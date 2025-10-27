@@ -81,6 +81,7 @@ main h1 {
 
 .card1 img {
   width: 150px;
+  border: 1px solid lightgray;
 }
 
 .aboutMe-div {
@@ -110,7 +111,12 @@ main h1 {
 }
 
 .slo-div figure {
-  margin: 0;
+  margin: auto 0;
+}
+
+.slo-div figcaption {
+  font-size: 15px;
+  text-align: center;
 }
 
 footer {
