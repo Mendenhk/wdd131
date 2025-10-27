@@ -131,9 +131,15 @@ footer {
   background-color: var(--banner-color);
   color: white;
   margin-top: 1rem;
+  padding: 1rem;
 }
 
-#footer p {
+footer p {
   text-align: center;
   color: white;
+}
+
+#lastModified {
+  font-size: 14px;
+  color: yellow;
 }
