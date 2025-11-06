@@ -5,13 +5,48 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
 
+/* mobile *********************************/
+header {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--banner-color);
+    color: white;
+    font-family: 2rem;
+    padding: 20px;
+}
 
+header h1 {
+    font-size: 2rem;
+}
 
+nav {
+    display: flex;
+    flex-direction: column;
+}
 
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    text-decoration: none;
+}
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 footer {
     grid-column: 1/4;
@@ -30,4 +65,18 @@ footer p {
 #lastModified {
     font-size: 14px;
     color: yellow;
+}
+
+/* larger views *******************/
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
