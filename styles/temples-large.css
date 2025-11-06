@@ -6,9 +6,19 @@
         justify-content: space-between;
     }
 
-    nav {
+    ul {
         flex-direction: row;
         justify-content: flex-end;
+    }
+
+    /*do I need this?*/
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
     }
 }
 
