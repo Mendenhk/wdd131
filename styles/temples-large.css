@@ -1,0 +1,25 @@
+/* larger views *******************/
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+    /* main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    } */
+}
+
+/* 
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+} */

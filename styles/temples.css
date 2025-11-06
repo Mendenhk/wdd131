@@ -16,13 +16,13 @@ body {
 
 /* mobile *********************************/
 header {
+    color: white;
     display: grid;
     gap: 1rem;
     align-items: center;
     background-color: var(--banner-color);
-    color: white;
     font-family: 2rem;
-    padding: 20px;
+    padding: 1rem;
 }
 
 header h1 {
@@ -43,12 +43,40 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
+nav a:hover {
+    background-color: yellow;
+    color: red;
 }
 
-footer {
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1rem));
+    gap: 1rem;
+    place-items: center;
+    padding: 1rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* max-width: 100%;
+    object-fit: cover; */
+}
+
+figcaption {
+    text-align: center;
+    /* word-wrap: break-word; */
+}
+
+*/ footer {
     grid-column: 1/4;
     place-items: center;
     background-color: var(--banner-color);
@@ -65,18 +93,4 @@ footer p {
 #lastModified {
     font-size: 14px;
     color: yellow;
-}
-
-/* larger views *******************/
-@media (min-width: 740px) {
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
 }
