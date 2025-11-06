@@ -1,0 +1,33 @@
+:root {
+    --banner-color: rgb(73, 73, 151);
+    --nav-color: rgb(70, 59, 59);
+}
+
+* {
+    margin: 0;
+}
+
+
+
+
+
+
+
+footer {
+    grid-column: 1/4;
+    place-items: center;
+    background-color: var(--banner-color);
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+#lastModified {
+    font-size: 14px;
+    color: yellow;
+}
