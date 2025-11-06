@@ -25,7 +25,7 @@ header {
     padding: 1rem;
 }
 
-header h1 {
+header p {
     font-size: 2rem;
 }
 
@@ -59,7 +59,7 @@ main {
     padding: 1rem;
 }
 
-main h1 {
+h1 {
     grid-column: 1 / -1;
 }
 
