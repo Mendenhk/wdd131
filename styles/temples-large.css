@@ -10,16 +10,15 @@
         flex-direction: row;
         justify-content: flex-end;
     }
-
-
-    /* main {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    } */
 }
 
-/* 
-@media (min-width: 600px) {
+
+/* @media (min-width: 600px) {
     main {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+} */
+
+/* main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 } */
