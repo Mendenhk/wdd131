@@ -11,7 +11,6 @@
         justify-content: flex-end;
     }
 
-    /*do I need this?*/
     .navigation a {
         display: block;
         flex: 1 1 100%;
