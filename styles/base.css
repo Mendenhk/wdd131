@@ -125,6 +125,7 @@ main h1 {
   text-align: center;
 }
 
+/*Below is the basic footer for all pages*/
 footer {
   grid-column: 1/4;
   place-items: center;

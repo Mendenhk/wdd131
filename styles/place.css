@@ -1,0 +1,49 @@
+:root {
+    --banner-color: rgb(73, 73, 151);
+    --nav-color: rgb(70, 59, 59);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, helvetica, sans-serif;
+    margin: 1rem;
+}
+
+header {
+    background-color: var(--banner-color);
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    padding: 1rem;
+}
+
+
+
+
+
+/*Below is the basic footer for all pages*/
+footer {
+    grid-column: 1/4;
+    place-items: center;
+    background-color: var(--banner-color);
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+#lastModified {
+    font-size: 14px;
+    color: yellow;
+}
