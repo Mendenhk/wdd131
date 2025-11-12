@@ -21,7 +21,7 @@
         bottom: 30px;
     }
 
-    .weather h2:after {
+    .weather h2::after {
         content: "   🌤️";
         margin-left: 1rem;
     }
