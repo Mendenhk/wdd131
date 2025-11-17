@@ -1,0 +1,33 @@
+table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+.title {
+    background-color: darkslategray
+}
+
+th {
+    padding: 1rem;
+}
+
+td {
+    padding: 0.5rem;
+    text-align: center;
+    border: thin solid black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 0.5rem;
+}
