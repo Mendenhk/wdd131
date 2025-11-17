@@ -5,7 +5,7 @@ let windChill;
 if (temperature <= 10 && windSpeed > 4.8) {
     windChill = calculateWindChill(temperature, windSpeed);
 } else {
-    windChill = 0;
+    windChill = temperature;
 }
 
 document.querySelector('.wind-chill').innerHTML = `${windChill}°C`
