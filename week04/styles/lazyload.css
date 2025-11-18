@@ -1,0 +1,46 @@
+:root {
+  --cambodia-blue: #032EA1;
+  --cambodia-red: #E00025;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, helvetica, sans-serif;
+  margin: 1rem;
+}
+
+
+img {
+    display: block;
+    margin: 1rem;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1 ;}
+}
+
+/*Below is the basic footer for all pages*/
+footer {
+  grid-column: 1/4;
+  place-items: center;
+  background-color: var(--cambodia-blue);
+  color: white;
+  padding: 1rem;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+#lastModified {
+  font-size: 14px;
+  color: yellow;
