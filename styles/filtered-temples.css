@@ -95,7 +95,7 @@ h1 {
     grid-column: 1 / -1;
 }
 
-figure img {
+img {
     width: 100%;
     height: auto;
     display: block;

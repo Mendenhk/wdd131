@@ -84,7 +84,6 @@ const temples = [
 
 /*JavaScript to create temple cards and fill the html */
 // const templeCardArray = [];
-let templeCard = '';
 
 /*the following was my initial attempt at the code before watching the video */
 // createTempleCardMe();
@@ -99,10 +98,13 @@ let templeCard = '';
 //     });
 //   }
 
+const templeCard = [];
+
 createTempleCard();
 
-function createTempleCard() {
-  temples.forEach(temple => {
+function createTempleCard(filteredTemples) {
+  filteredTemples.forEach(temple => {
+    //creates all of the desired nodes (elements) ans stores them.
     let card = document. createElement("section"); 
     let name = document.createElement("h3"); 
     let location = document.createElement("p"); 
@@ -110,7 +112,8 @@ function createTempleCard() {
     let area = document.createElement("p"); 
     let img = document.createElement("img");
 
-    name. textContent = temple.templeName;
+    //adds text, temple strings, and attributes to the saved nodes (elements)
+    name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedicated: </span> ${temple.dedicated}`;
     area. innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
@@ -118,6 +121,8 @@ function createTempleCard() {
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
 
+    //card is the variable holding the section container defining each card;
+    //this adds/appends each element within the section one after another.  
     card.appendChild(name); 
     card.appendChild(location); 
     card.appendChild(dedication);
