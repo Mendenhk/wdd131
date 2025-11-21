@@ -83,14 +83,52 @@ const temples = [
 ];
 
 /*JavaScript to create temple cards and fill the html */
-templeCard = '';
-temples.forEach(temple => {
-    templeCard += `<h2>${temple.templeName}</h2>
-    <p><span>Location: </span>${temple.location}</p>
-    <p><span>Dedicated: </span>${temple.dedicated}</p>
-    <p><span>Size: </span>${temple.area} sq ft</p>
-    <figure><img src="${temple.imageUrl}" alt="${temple.templeName} temple"></img></figure>`
-});
+// const templeCardArray = [];
+let templeCard = '';
+
+/*the following was my initial attempt at the code before watching the video */
+// createTempleCardMe();
+
+// function createTempleCardMe() {
+//     temples.forEach(temple => {
+//     templeCard += `<h2>${temple.templeName}</h2>
+//     <p><span>Location: </span>${temple.location}</p>
+//     <p><span>Dedicated: </span>${temple.dedicated}</p>
+//     <p><span>Size: </span>${temple.area} sq ft</p>
+//     <figure><img src="${temple.imageUrl}" alt="${temple.templeName} temple" loading="lazy"></img></figure>`
+//     });
+//   }
+
+createTempleCard();
+
+function createTempleCard() {
+  temples.forEach(temple => {
+    let card = document. createElement("section"); 
+    let name = document.createElement("h3"); 
+    let location = document.createElement("p"); 
+    let dedication = document.createElement("p");
+    let area = document.createElement("p"); 
+    let img = document.createElement("img");
+
+    name. textContent = temple.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedication.innerHTML = `<span class="label">Dedicated: </span> ${temple.dedicated}`;
+    area. innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name); 
+    card.appendChild(location); 
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".temple-cards-grid").appendChild(card);
+    //return card;
+  });
+}
+
 
 /*Changes the footer text*/
 const today = new Date();
