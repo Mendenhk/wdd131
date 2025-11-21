@@ -98,6 +98,30 @@ const temples = [
 //     });
 //   }
 
+const oldTemplesButton = document.querySelector('#old_temples');
+const newTemplesButton = document.querySelector('#new_temples');
+const largeTemplesButton = document.querySelector('#large_temples');
+const smallTemplesButton = document.querySelector('#small_temples');
+
+/*my first attempt at addEventListener*/
+// let filteredTempleArray = [];
+// oldTemplesButton.addEventListener('click', () => {
+//   temples.forEach((temple) => {
+//     if (temple.dedicated < 1900) {
+//       filteredTempleArray.push(temple);
+//     }
+//   })
+//   createTempleCard(filteredTempleArray);
+// });
+
+oldTemplesButton.addEventListener('click', () => {
+  let old = temples.filter(temple => {
+    let year = parseInt(temple.dedicated);
+    return year < 1900;
+  });
+  createTempleCard(old);
+});
+
 const templeCard = [];
 
 createTempleCard();
