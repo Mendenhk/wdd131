@@ -98,6 +98,8 @@ const temples = [
 //     });
 //   }
 
+const templeContainer = document.querySelector('.temple-cards-grid');
+const homeButton = document.querySelector('#home');
 const oldTemplesButton = document.querySelector('#old_temples');
 const newTemplesButton = document.querySelector('#new_temples');
 const largeTemplesButton = document.querySelector('#large_temples');
@@ -114,7 +116,14 @@ const smallTemplesButton = document.querySelector('#small_temples');
 //   createTempleCard(filteredTempleArray);
 // });
 
+createTempleCard(temples);
+
+homeButton.addEventListener('click', () => {
+  createTempleCard(temples);
+});
+
 oldTemplesButton.addEventListener('click', () => {
+  templeContainer.innerHTML = '';
   let old = temples.filter(temple => {
     let year = parseInt(temple.dedicated);
     return year < 1900;
@@ -122,14 +131,33 @@ oldTemplesButton.addEventListener('click', () => {
   createTempleCard(old);
 });
 
-const templeCard = [];
+newTemplesButton.addEventListener('click', () => {
+  templeContainer.innerHTML = '';
+  let newTemple = temples.filter(temple => {
+    let year = parseInt(temple.dedicated);
+    return year > 2000;
+  });
+  createTempleCard(newTemple);
+});
 
-createTempleCard();
+largeTemplesButton.addEventListener('click', () => {
+  templeContainer.innerHTML = '';
+  let large = temples.filter(temple => temple.area > 90000);
+  createTempleCard(large);
+});
+
+smallTemplesButton.addEventListener('click', () => {
+  templeContainer.innerHTML = '';
+  let small = temples.filter(temple => temple.area < 10000);
+  createTempleCard(small);
+});
+
+// const templeCard = [];
 
 function createTempleCard(filteredTemples) {
   filteredTemples.forEach(temple => {
     //creates all of the desired nodes (elements) ans stores them.
-    let card = document. createElement("section"); 
+    let card = document.createElement("section"); 
     let name = document.createElement("h3"); 
     let location = document.createElement("p"); 
     let dedication = document.createElement("p");
@@ -157,7 +185,6 @@ function createTempleCard(filteredTemples) {
     //return card;
   });
 }
-
 
 /*Changes the footer text*/
 const today = new Date();
