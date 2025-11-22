@@ -119,11 +119,13 @@ const smallTemplesButton = document.querySelector('#small_temples');
 createTempleCard(temples);
 
 homeButton.addEventListener('click', () => {
+  document.querySelector('h1').textContent = 'Home';
   createTempleCard(temples);
 });
 
 oldTemplesButton.addEventListener('click', () => {
   templeContainer.innerHTML = '';
+  document.querySelector('h1').innerHTML = 'Old Temples<br>Dedicated Before 1900';
   let old = temples.filter(temple => {
     let year = parseInt(temple.dedicated);
     return year < 1900;
@@ -133,6 +135,7 @@ oldTemplesButton.addEventListener('click', () => {
 
 newTemplesButton.addEventListener('click', () => {
   templeContainer.innerHTML = '';
+  document.querySelector('h1').innerHTML = 'New Temples<br>Dedicated after 2000';
   let newTemple = temples.filter(temple => {
     let year = parseInt(temple.dedicated);
     return year > 2000;
@@ -142,12 +145,14 @@ newTemplesButton.addEventListener('click', () => {
 
 largeTemplesButton.addEventListener('click', () => {
   templeContainer.innerHTML = '';
+  document.querySelector('h1').innerHTML = 'Large Temples<br>larger than 90,000ft-sq';
   let large = temples.filter(temple => temple.area > 90000);
   createTempleCard(large);
 });
 
 smallTemplesButton.addEventListener('click', () => {
   templeContainer.innerHTML = '';
+  document.querySelector('h1').innerHTML = 'Small Temples<br>smaller than 10,000ft-sq';
   let small = temples.filter(temple => temple.area < 10000);
   createTempleCard(small);
 });
