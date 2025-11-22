@@ -131,11 +131,7 @@ img {
     height: auto;
     display: block;
     box-shadow: 0 0 30px black;
-    margin-top: 0 auto;
     border-radius: 8px;
-    margin-top: 1rem;
-    /* max-width: 100%;
-    object-fit: cover; */
 }
 
 footer {
