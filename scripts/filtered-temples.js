@@ -10,7 +10,7 @@ const temples = [
   },
   {
     templeName: "Manti Utah",
-    location: "Manti, Utah, United States",
+    location: "Manti, UT, USA",
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
@@ -18,7 +18,7 @@ const temples = [
   },
   {
     templeName: "Payson Utah",
-    location: "Payson, Utah, United States",
+    location: "Payson, UT, USA",
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
@@ -34,7 +34,7 @@ const temples = [
   },
   {
     templeName: "Washington D.C.",
-    location: "Kensington, Maryland, United States",
+    location: "Kensington, MD, USA",
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
@@ -173,7 +173,7 @@ function createTempleCard(filteredTemples) {
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedicated: </span> ${temple.dedicated}`;
-    area. innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+    area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");

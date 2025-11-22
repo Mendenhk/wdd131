@@ -100,11 +100,11 @@ h1 {
 
 /* temple div containers */
 .temple-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    justify-items: center;
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem;
 }
 
 .temple-cards-grid section {
@@ -114,15 +114,19 @@ h1 {
 }
 
 h3 {
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 h3, p {
     text-align: center;
 }
 
-span {
+p {
     font-size: 14px;
+}
+
+span {
+    font-size: 13px;
     color: var(--banner-color)
 }
 
