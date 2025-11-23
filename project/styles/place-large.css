@@ -1,0 +1,51 @@
+@media (min-width: 740px) {
+    main {
+        position: relative;
+    }
+
+    .data,
+    .weather {
+        display: block;
+        background-color: rgba(240, 240, 240, 0.8);
+        box-shadow: 0 0 30px;
+        position: absolute;
+    }
+
+    .data {
+        top: 30px;
+        left: 20px;
+    }
+
+    .weather {
+        right: 20px;
+        bottom: 30px;
+    }
+
+    .weather h2::after {
+        content: "   🌤️";
+        margin-left: 1rem;
+    }
+
+    h2 {
+        background-color: var(--cambodia-red);
+        color: white;
+        padding: 0.5rem 0.5rem;
+        width: 200px;
+        position: absolute;
+        left: -23px;
+        top: 8px;
+        text-align: left;
+    }
+
+    svg {
+        display: none;
+    }
+
+    ul {
+        padding-top: 50px;
+    }
+
+    .bottom-stripe {
+        display: none;
+    }
+}
