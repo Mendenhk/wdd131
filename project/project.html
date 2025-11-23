@@ -19,10 +19,37 @@
 
 <body>
   <header>
-    <h1>Cambodia</h1>
-    <div></div>
+    <dev class="logo-container">
+      <svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Angkor Wat stylized 3-peak silhouette -->
+        <g transform="translate(20,32)">
+          <!-- Left smaller tower -->
+          <path d="M0,58 L12,38 L24,58 Z" fill="#D4AF37"/>
+          <!-- Right smaller tower -->
+          <path d="M46,58 L58,38 L70,58 Z" fill="#D4AF37"/>
+          <!-- Central main tower (overlaps the sides) -->
+          <path d="M12,62 L35,25 L58,62 Z" fill="#D4AF37"/>
+          <!-- Vertical oval spire on central tower only -->
+          <ellipse cx="35" cy="18" rx="6" ry="8" fill="#D4AF37"/>
+        </g>
+        <text x="110" y="58" class="title">DISCOVER</text>
+        <text x="110" y="80" class="title">CAMBODIA</text>
+      </svg>
+    </dev>
+    <button id="menu" aria-label="Open navigation menu"></button>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="old_temples">Old</a></li>
+        <li><a href="#" id="new_temples">New</a></li>
+        <li><a href="#" id="large_temples">Large</a></li>
+        <li><a href="#" id="small_temples">Small</a></li>
+      </ul>
+    </nav>
+    <div class="red-stripe"></div>
   </header>
   <main>
+    <h1>Cambodia</h1>
     <div class="hero">
       <picture>
         <source srcset="images/cambodia-large.webp" media="(min-width: 740px)">

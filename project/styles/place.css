@@ -19,12 +19,58 @@ header {
   text-align: center;
 }
 
-header h1 {
-  color: white;
+/*CSS code for the menu button (#menu) and the nav list (.navigation) */
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav a {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* small view navigation.  #menu is the button */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    /*so it is see through*/
+    color: #000;
+    position: absolute;
+    /*since no relative container, this is absolute in relation to the page*/
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '❌';
+}
+
+.open a {
+    display: block;
+}
+
+h1 {
+  text-align: center;
   padding: 1rem;
 }
 
-header div {
+.red-stripe {
   padding: 0.5rem;
   background-color: var(--cambodia-red);
 }
@@ -118,4 +164,14 @@ footer p {
 
 .cls-3 {
   fill: #fff;
+}
+
+/* svg styling: */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@600&display=swap');
+      .title { font-family: 'Cinzel', serif; font-size: 28px; fill: #D4AF37; font-weight: 700; }
+      /* .subtitle { font-family: 'Playfair Display', serif; font-size: 14px; fill: #003087; letter-spacing: 4px; } */
+
+.logo-container svg {
+  width: 300px;
+  height: auto;
 }

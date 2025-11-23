@@ -28,12 +28,13 @@ header p {
     font-size: 2rem;
 }
 
-/*only needed for grading purposes*/
+/* only needed for grading purposes */
 nav {
     display: flex;
     justify-content: center;
 }
 
+/*CSS code for the menu button (#menu) and the nav list (.navigation) */
 ul {
     display: flex;
     flex-direction: column;

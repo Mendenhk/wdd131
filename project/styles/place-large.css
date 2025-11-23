@@ -37,7 +37,7 @@
         text-align: left;
     }
 
-    svg {
+    .weather svg {
         display: none;
     }
 
@@ -49,3 +49,13 @@
         display: none;
     }
 }
+
+/*navigation button and list for large view*/
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }

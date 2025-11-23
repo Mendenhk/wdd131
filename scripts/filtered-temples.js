@@ -158,7 +158,6 @@ smallTemplesButton.addEventListener('click', () => {
 });
 
 // const templeCard = [];
-
 function createTempleCard(filteredTemples) {
   filteredTemples.forEach(temple => {
     //creates all of the desired nodes (elements) ans stores them.
@@ -199,7 +198,7 @@ year.innerHTML = `${today.getFullYear()}`
 const lastModified = document.querySelector("#lastModified");
 lastModified.innerHTML = `Last Modification: ${document.getElementById("lastModified").innerHTML = document.lastModified}`;
 
-/*The hamburger effect*/
+/*The hamburger effect (navigation menu and button)*/
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
