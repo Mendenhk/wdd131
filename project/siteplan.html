@@ -12,6 +12,8 @@
 
 
 
+<!-- Next: move icon to center of small page, and remove space below -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131 - Places Assignment</title>
   <meta name="description"
-    content="this site provides a hub for exploring different parts of the Cambodian culture: food, people, places, etc.">
+    content="large and small screen versions of favorite place to visit.  The content displayed changes according to phone or computer display.">
   <meta name="author" content="Kriston Mendenhall">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,20 +37,27 @@
   <header>
     <dev class="logo-container">
       <svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
-        <!-- Angkor Wat stylized 3-peak silhouette -->
-        <g transform="translate(20,32)">
-          <!-- Left smaller tower -->
-          <path d="M0,58 L12,38 L24,58 Z" fill="#D4AF37"/>
-          <!-- Right smaller tower -->
-          <path d="M46,58 L58,38 L70,58 Z" fill="#D4AF37"/>
-          <!-- Central main tower (overlaps the sides) -->
-          <path d="M12,62 L35,25 L58,62 Z" fill="#D4AF37"/>
-          <!-- Vertical oval spire on central tower only -->
-          <ellipse cx="35" cy="18" rx="6" ry="8" fill="#D4AF37"/>
-        </g>
-        <text x="110" y="58" class="title">DISCOVER</text>
-        <text x="110" y="80" class="title">CAMBODIA</text>
-      </svg>
+  <!-- Angkor Wat stylized 3-peak silhouette -->
+  <g transform="translate(20,32)">
+    <!-- Left smaller tower -->
+    <path d="M0,58 L12,38 L24,58 Z" fill="#D4AF37"/>
+    <!-- Right smaller tower -->
+    <path d="M46,58 L58,38 L70,58 Z" fill="#D4AF37"/>
+    <!-- Central main tower (overlaps the sides) -->
+    <path d="M12,62 L35,25 L58,62 Z" fill="#D4AF37"/>
+
+    <!-- Vertical oval spires on all three peaks -->
+    <!-- Left small spire -->
+    <ellipse cx="12" cy="33" rx="4.5" ry="6" fill="#D4AF37"/>
+    <!-- Central main spire (a bit taller) -->
+    <ellipse cx="35" cy="18" rx="6" ry="8" fill="#D4AF37"/>
+    <!-- Right small spire -->
+    <ellipse cx="58" cy="33" rx="4.5" ry="6" fill="#D4AF37"/>
+  </g>
+
+  <text x="110" y="58" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1a1a1a">DISCOVER</text>
+  <text x="110" y="80" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1a1a1a">CAMBODIA</text>
+</svg>
     </dev>
     <button id="menu" aria-label="Open navigation menu"></button>
     <nav class="navigation">
@@ -56,7 +65,7 @@
         <li><a href="#" id="home">Home</a></li>
         <li><a href="#" id="Places to Visit">Places to Visit</a></li>
         <li><a href="#" id="Food to Eat">Food to Eat</a></li>
-        <li><a href="#" id="Culture">Culture</a></li>
+        <li><a href="#" id="People">People</a></li>
       </ul>
     </nav>
   </header>
