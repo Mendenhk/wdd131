@@ -103,6 +103,16 @@ h2 {
   margin: 0 auto;
 }
 
+/* svg styling: */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@600&display=swap');
+      .title { font-family: 'Cinzel', serif; font-size: 28px; fill: #D4AF37; font-weight: 700; }
+      /* .subtitle { font-family: 'Playfair Display', serif; font-size: 14px; fill: #003087; letter-spacing: 4px; } */
+
+.logo-container svg {
+  width: 300px;
+  height: auto;
+}
+
 svg {
   grid-column: 1 / -1;
   margin: 0 auto;
@@ -164,14 +174,4 @@ footer p {
 
 .cls-3 {
   fill: #fff;
-}
-
-/* svg styling: */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@600&display=swap');
-      .title { font-family: 'Cinzel', serif; font-size: 28px; fill: #D4AF37; font-weight: 700; }
-      /* .subtitle { font-family: 'Playfair Display', serif; font-size: 14px; fill: #003087; letter-spacing: 4px; } */
-
-.logo-container svg {
-  width: 300px;
-  height: auto;
 }
