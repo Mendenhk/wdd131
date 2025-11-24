@@ -41,8 +41,27 @@
         display: none;
     }
 
-    ul {
-        padding-top: 50px;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /*navigation button and list for large view*/
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 50px;
+  }
+
+    .navigation a {
+        display: block;
+        /* flex: 1 1 100%; */
+    }
+
+    #menu {
+        display: none;
     }
 
     .bottom-stripe {
@@ -50,12 +69,3 @@
     }
 }
 
-/*navigation button and list for large view*/
-    .navigation a {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    #menu {
-        display: none;
-    }
