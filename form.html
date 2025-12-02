@@ -40,16 +40,19 @@
           </select>
         </label>
 
-        <p class="stars-paragraph">Overall Rating</p>
+        <p class="stars-paragraph">Overall Rating*</p>
         <div class="stars-container">
-          <label><span class="stars">⭐</span><input type="radio" name="rating" id="one" value="one"></label>
-          <label><span class="stars">⭐⭐</span><input type="radio" name="rating" id="two" value="two"></label>
-          <label><span class="stars">⭐⭐⭐</span><input type="radio" name="rating" id="three" value="three"></label>
-          <label><span class="stars">⭐⭐⭐⭐</span><input type="radio" name="rating" id="four" value="four"></label>
-          <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" id="five" value="five"></label>
+          <label><span class="stars">⭐</span><input type="radio" name="rating" id="one" value="one" required></label>
+          <label><span class="stars">⭐⭐</span><input type="radio" name="rating" id="two" value="two" required></label>
+          <label><span class="stars">⭐⭐⭐</span><input type="radio" name="rating" id="three" value="three"
+              required></label>
+          <label><span class="stars">⭐⭐⭐⭐</span><input type="radio" name="rating" id="four" value="four"
+              required></label>
+          <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" id="five" value="five"
+              required></label>
         </div>
 
-        <label class="date-label">Date of Installation<input type="date" name="completed"></label>
+        <label class="date-label">Date of Installation*<input type="date" name="completed" id="date" required></label>
 
         <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that apply)</p>
         <label class="checkbox-label"><input type="checkbox" name="durability" value="yes">Durability</label>
