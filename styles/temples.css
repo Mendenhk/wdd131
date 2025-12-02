@@ -108,6 +108,7 @@ figcaption {
     /* word-wrap: break-word; */
 }
 
+/* ----------------Footer-------------------- */
 footer {
     grid-column: 1/4;
     place-items: center;
