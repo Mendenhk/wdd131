@@ -21,7 +21,7 @@
   <main>
     <form class="wf1">
       <div>
-        <label>Product Name
+        <label class="select-label">Product Name
           <select name="product">
             <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
             <option value="">Please Select &#9662;</option>
@@ -46,19 +46,18 @@
           <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" value="five"></label>
         </div>
 
-        <label>Date of Installation<input type="date" name="completed"></label>
+        <label class="date-label">Date of Installation<input type="date" name="completed"></label>
 
-        <div>Which features did you find useful in the product?<br>
-          (check all that apply)</div>
-        <label><input type="checkbox" name="durability" value="yes">Durability</label>
-        <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
-        <label><input type="checkbox" name="performance" value="yes">performance</label>
-        <label><input type="checkbox" name="design" value="yes">Design</label>
+        <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that apply)</p>
+        <label class="checkbox-label"><input type="checkbox" name="durability" value="yes">Durability</label>
+        <label class="checkbox-label"><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+        <label class="checkbox-label"><input type="checkbox" name="performance" value="yes">Performance</label>
+        <label class="checkbox-label"><input type="checkbox" name="design" value="yes">Design</label>
 
-        <label for="review">Written Review <span>(optional)</span></label>
+        <label class="textarea-label" for="review">Written Review <span>(optional)</span></label>
         <textarea id="review"></textarea>
 
-        <label>YourName*<span>(optional)</span><input type="text" name="name" required></label>
+        <label class="text-label">YourName*<span>(optional)</span><input type="text" name="name" required></label>
 
         <input type="submit" value="Post Review">
       </div>
