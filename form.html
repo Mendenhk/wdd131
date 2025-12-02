@@ -1,3 +1,6 @@
+<!-- next steps:
+1. add live options from an array (products put in from an array of products) -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +22,12 @@
   </header>
 
   <main>
-    <form class="wf1">
+    <form class="wf1" method="get" action="review.html">
       <div>
-        <label class="select-label">Product Name
-          <select name="product">
+        <label class="select-label" for="product">Product Name*
+          <select name="product" id="product" required>
             <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
-            <option value="">Please Select &#9662;</option>
+            <option value="" selected disabled>Select a Product &#9662;</option>
             <option value="software">Software Development</option>
             <option value="software">Creative Professional</option>
             <option value="creative">Information Technology</option>
@@ -39,11 +42,11 @@
 
         <p class="stars-paragraph">Overall Rating</p>
         <div class="stars-container">
-          <label><span class="stars">⭐</span><input type="radio" name="rating" value="one"></label>
-          <label><span class="stars">⭐⭐</span><input type="radio" name="rating" value="two"></label>
-          <label><span class="stars">⭐⭐⭐</span><input type="radio" name="rating" value="three"></label>
-          <label><span class="stars">⭐⭐⭐⭐</span><input type="radio" name="rating" value="four"></label>
-          <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" value="five"></label>
+          <label><span class="stars">⭐</span><input type="radio" name="rating" id="one" value="one"></label>
+          <label><span class="stars">⭐⭐</span><input type="radio" name="rating" id="two" value="two"></label>
+          <label><span class="stars">⭐⭐⭐</span><input type="radio" name="rating" id="three" value="three"></label>
+          <label><span class="stars">⭐⭐⭐⭐</span><input type="radio" name="rating" id="four" value="four"></label>
+          <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" id="five" value="five"></label>
         </div>
 
         <label class="date-label">Date of Installation<input type="date" name="completed"></label>

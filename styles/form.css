@@ -35,10 +35,11 @@ header {
 
 /*--------------------Copied from Small--------------*/
 
-/*----------- MAIN --------------*/
-main {
-  padding: 0 2%;
-  min-height: 20rem;
+/*----------- body --------------*/
+header,
+main,
+footer {
+  margin: 1rem;
 }
 
 /*----------- FORM STYLING --------------*/
@@ -50,6 +51,7 @@ main {
 .wf1 label {
   display: block;
   /* changes from inline to block, putting each label on own line */
+
 }
 
 /* now to fix the "audience" and "software needed" text spacing for the radial and checkboxes */
@@ -111,12 +113,13 @@ main {
 /*---------------------radio buttons---------------------*/
 .stars-paragraph {
   margin-top: 1rem;
-  /* margin-bottom: -2rem; */
 }
 
 .stars-container {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
 }
 
 .stars-container label {
@@ -129,18 +132,11 @@ main {
   margin-top: 1rem;
 }
 
-/*the CSS below is not working*/
-/* .checkbox-label {
+/*.wf1 had to be added to override the .wf1 rule above for blocking labels*/
+.wf1 .checkbox-label {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 0.25rem 0;
-  padding-top: 0.25rem;
 }
-
-.checkbox-label {
-  padding-top: 0.25rem;
-} */
 
 input[type="checkbox"] {
   height: 20px;
