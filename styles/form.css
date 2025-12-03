@@ -136,6 +136,7 @@ footer {
 .wf1 .checkbox-label {
   display: flex;
   align-items: center;
+  margin-bottom: 0.2rem;
 }
 
 input[type="checkbox"] {
@@ -153,20 +154,17 @@ input[type="checkbox"] {
   border-bottom: solid 8px red;
 }
 
+.wf1 select:required {
+  border-bottom: solid 8px red;
+}
+
 .wf1 input:required:valid {
   border-bottom: solid 8px green;
 }
 
-
-
-
-
-
-
-
-
-
-
+.wf1 select:required:valid {
+  border-bottom: solid 8px green;
+}
 
 /* ----------------Footer-------------------- */
 footer {

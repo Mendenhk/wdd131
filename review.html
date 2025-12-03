@@ -1,1 +1,16 @@
-<p>hello world</p>
+<h1>Congratulations, your review has been submitted!</h1>
+<p>You have submitted <span id="reviewCounter"></span> reviews.</p>
+<p><a href="form.html">← Submit Another Review</a></p>
+
+<script>
+  /*code for the review.html file*/
+  /*This creates a local storage of the number of times page is visited */
+  let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+  reviewCount++;
+  localStorage.setItem("reviewCount", reviewCount);
+
+  const counterDisplay = document.querySelector("#reviewCounter");
+  if (counterDisplay) {
+    counterDisplay.textContent = reviewCount;
+  }
+</script>

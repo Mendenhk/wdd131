@@ -1,6 +1,6 @@
 <!-- next steps:
-1. add live options from an array (products put in from an array of products) 
-2. add CSS to separate out checkboxes from each other-->
+1. place review.html javascript in separate file
+2. add review.html CSS-->
 
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/filtered-temples.js" defer></script>
+  <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
           <select name="product" id="product" required>
             <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
             <option value="" selected disabled>Select a Product &#9662;</option>
-            <option value="software">Software Development</option>
+            <!-- <option value="software">Software Development</option>
             <option value="software">Creative Professional</option>
             <option value="creative">Information Technology</option>
             <option value="info">Data Professional</option>
@@ -37,7 +37,7 @@
             <option value="construction">Construction</option>
             <option value="manufacturing">Manufacturing</option>
             <option value="business">Business Professoional</option>
-            <option value="security">Cyber Security</option>
+            <option value="security">Cyber Security</option> -->
           </select>
         </label>
 
@@ -55,7 +55,8 @@
 
         <label class="date-label">Date of Installation*<input type="date" name="completed" id="date" required></label>
 
-        <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that apply)</p>
+        <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that apply)
+          (optional)</p>
         <label class="checkbox-label"><input type="checkbox" id="durability" name="durability"
             value="yes">Durability</label>
         <label class="checkbox-label"><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
