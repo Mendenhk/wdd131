@@ -185,3 +185,21 @@ footer p {
   font-size: 14px;
   color: yellow;
 }
+
+/*------------ Large screens --------------------*/
+@media (min-width: 720px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wf1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .stars-container {
+    justify-content: space-between;
+  }
+}

@@ -1,6 +1,5 @@
-<!-- next steps:
-1. place review.html javascript in separate file
-2. add review.html CSS-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -43,14 +42,11 @@
 
         <p class="stars-paragraph">Overall Rating*</p>
         <div class="stars-container">
-          <label><span class="stars">⭐</span><input type="radio" name="rating" id="one" value="one" required></label>
-          <label><span class="stars">⭐⭐</span><input type="radio" name="rating" id="two" value="two" required></label>
-          <label><span class="stars">⭐⭐⭐</span><input type="radio" name="rating" id="three" value="three"
-              required></label>
-          <label><span class="stars">⭐⭐⭐⭐</span><input type="radio" name="rating" id="four" value="four"
-              required></label>
-          <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" id="five" value="five"
-              required></label>
+          <label class="stars">⭐<input type="radio" name="rating" id="one" value="one" required></label>
+          <label class="stars">⭐⭐<input type="radio" name="rating" id="two" value="two" required></label>
+          <label class="stars">⭐⭐⭐<input type="radio" name="rating" id="three" value="three" required></label>
+          <label class="stars">⭐⭐⭐⭐<input type="radio" name="rating" id="four" value="four" required></label>
+          <label class="stars">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="five" value="five" required></label>
         </div>
 
         <label class="date-label">Date of Installation*<input type="date" name="completed" id="date" required></label>
@@ -81,3 +77,5 @@
     <p id="lastModified">add last modified with JavaScript</p>
   </footer>
 </body>
+
+</html>
