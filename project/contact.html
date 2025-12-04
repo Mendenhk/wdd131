@@ -2,141 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - SitePlan</title>
-    <meta name="description" content="Final Project-Discover Cambodia-places to visit, food to eat, the people">
-    <meta name="author" content="Kriston Mendenhall">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan-large.css">
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - SitePlan</title>
+  <meta name="description" content="Final Project-Discover Cambodia-places to visit, food to eat, the people">
+  <meta name="author" content="Kriston Mendenhall">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan-large.css">
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <script src="scripts/siteplan.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
-                <!-- Angkor Wat stylized 3-peak silhouette -->
-                <g transform="translate(20,32)">
-                    <!-- Left smaller tower -->
-                    <path d="M0,58 L12,38 L24,58 Z" fill="#D4AF37" />
-                    <!-- Right smaller tower -->
-                    <path d="M46,58 L58,38 L70,58 Z" fill="#D4AF37" />
-                    <!-- Central main tower (overlaps the sides) -->
-                    <path d="M12,62 L35,25 L58,62 Z" fill="#D4AF37" />
+  <header>
+    <div class="logo-container">
+      <svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Angkor Wat stylized 3-peak silhouette -->
+        <g transform="translate(20,32)">
+          <!-- Left smaller tower -->
+          <path d="M0,58 L12,38 L24,58 Z" fill="#D4AF37" />
+          <!-- Right smaller tower -->
+          <path d="M46,58 L58,38 L70,58 Z" fill="#D4AF37" />
+          <!-- Central main tower (overlaps the sides) -->
+          <path d="M12,62 L35,25 L58,62 Z" fill="#D4AF37" />
 
-                    <!-- Vertical oval spires on all three peaks -->
-                    <!-- Left small spire -->
-                    <ellipse cx="12" cy="33" rx="4.5" ry="6" fill="#D4AF37" />
-                    <!-- Central main spire (a bit taller) -->
-                    <ellipse cx="35" cy="18" rx="6" ry="8" fill="#D4AF37" />
-                    <!-- Right small spire -->
-                    <ellipse cx="58" cy="33" rx="4.5" ry="6" fill="#D4AF37" />
-                </g>
+          <!-- Vertical oval spires on all three peaks -->
+          <!-- Left small spire -->
+          <ellipse cx="12" cy="33" rx="4.5" ry="6" fill="#D4AF37" />
+          <!-- Central main spire (a bit taller) -->
+          <ellipse cx="35" cy="18" rx="6" ry="8" fill="#D4AF37" />
+          <!-- Right small spire -->
+          <ellipse cx="58" cy="33" rx="4.5" ry="6" fill="#D4AF37" />
+        </g>
 
-                <text x="110" y="58" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
-                    fill="#1a1a1a">DISCOVER</text>
-                <text x="110" y="80" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
-                    fill="#1a1a1a">CAMBODIA</text>
-            </svg>
+        <text x="110" y="58" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
+          fill="#1a1a1a">DISCOVER</text>
+        <text x="110" y="80" class="title" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
+          fill="#1a1a1a">CAMBODIA</text>
+      </svg>
+    </div>
+    <button id="menu" aria-label="Open navigation menu"></button>
+    <nav class="navigation">
+      <ul>
+        <li><a href="siteplan.html" id="home">Home</a></li>
+        <li><a href="places.html" id="places">Places to Visit</a></li>
+        <li><a href="#" id="food">Food to Eat</a></li>
+        <li><a href="#" id="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="red-stripe"></div>
+    <h1 class="contact-h1">Contact Us</h1>
+    <form class="wf1" method="get" action="review.html">
+      <h3>Feel free to let us know how we can improve our website</h3>
+      <div>
+        <label class="select-label" for="reference">Where did you hear about us?
+          <select name="reference" id="reference" required>
+            <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
+            <option value="" selected disabled>discovery tool &#9662;</option>
+          </select>
+        </label>
+
+        <p class="stars-paragraph">Overall Rating*</p>
+        <div class="stars-container">
+          <div>
+            <label class="stars" for="one">⭐</label>
+            <input type="radio" name="rating" id="one" value="one" required>
+          </div>
+          <div>
+            <label class="stars" for="two">⭐⭐</label>
+            <input type="radio" name="rating" id="two" value="two" required>
+          </div>
+          <div>
+            <label class="stars" for="three">⭐⭐⭐</label>
+            <input type="radio" name="rating" id="three" value="three" required>
+          </div>
+          <div>
+            <label class="stars" for="four">⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" id="four" value="four" required>
+          </div>
+          <div>
+            <label class="stars" for="five">⭐⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" id="five" value="five" required>
+          </div>
         </div>
-        <button id="menu" aria-label="Open navigation menu"></button>
-        <nav class="navigation">
-            <ul>
-                <li><a href="siteplan.html" id="home">Home</a></li>
-                <li><a href="places.html" id="places">Places to Visit</a></li>
-                <li><a href="#" id="food">Food to Eat</a></li>
-                <li><a href="#" id="contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div class="red-stripe"></div>
-        <h1 class="contact-h1">Contact Us</h1>
-        <form class="wf1" method="get" action="review.html">
-            <h3>Feel free to let us know how we can improve our website</h3>
-            <div>
-                <label class="select-label" for="reference">Where did you hear about us?
-                    <select name="reference" id="reference" required>
-                        <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
-                        <option value="" selected disabled>discovery tool &#9662;</option>
-                    </select>
-                </label>
+        <label class="date-label" for="date">Date of Installation*</label>
+        <input type="date" name="date" id="date" required>
 
-                <p class="stars-paragraph">Overall Rating*</p>
-                <div class="stars-container">
-                    <div>
-                        <label class="stars" for="one">⭐</label>
-                        <input type="radio" name="rating" id="one" value="one" required>
-                    </div>
-                    <div>
-                        <label class="stars" for="two">⭐⭐</label>
-                        <input type="radio" name="rating" id="two" value="two" required>
-                    </div>
-                    <div>
-                        <label class="stars" for="three">⭐⭐⭐</label>
-                        <input type="radio" name="rating" id="three" value="three" required>
-                    </div>
-                    <div>
-                        <label class="stars" for="four">⭐⭐⭐⭐</label>
-                        <input type="radio" name="rating" id="four" value="four" required>
-                    </div>
-                    <div>
-                        <label class="stars" for="five">⭐⭐⭐⭐⭐</label>
-                        <input type="radio" name="rating" id="five" value="five" required>
-                    </div>
-                </div>
+        <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that
+          apply)
+          (optional)</p>
 
-                <label class="date-label" for="date">Date of Installation*</label>
-                <input type="date" name="date" id="date" required>
+        <div class="checkbox">
+          <input type="checkbox" id="durability" name="durability" value="yes">
+          <label for="durability">Durability</label>
+        </div>
 
-                <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that
-                    apply)
-                    (optional)</p>
+        <div class="checkbox">
+          <input type="checkbox" id="ease" name="ease" value="yes">
+          <label for="ease">Ease of Use</label>
+        </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" id="durability" name="durability" value="yes">
-                    <label for="durability">Durability</label>
-                </div>
+        <div class="checkbox">
+          <input type="checkbox" id="performance" name="performance" value="yes">
+          <label for="performance">Performance</label>
+        </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" id="ease" name="ease" value="yes">
-                    <label for="ease">Ease of Use</label>
-                </div>
+        <div class="checkbox">
+          <input type="checkbox" id="design" name="design" value="yes">
+          <label for="design">Design</label>
+        </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" id="performance" name="performance" value="yes">
-                    <label for="performance">Performance</label>
-                </div>
+        <label class="textarea-label" for="review">Written Review <span>(optional)</span></label>
 
-                <div class="checkbox">
-                    <input type="checkbox" id="design" name="design" value="yes">
-                    <label for="design">Design</label>
-                </div>
+        <textarea id="review" name="review"></textarea>
 
-                <label class="textarea-label" for="review">Written Review <span>(optional)</span></label>
+        <label for="name" class="text-label">YourName (optional)</label>
+        <input type="text" id="name" name="name">
 
-                <textarea id="review" name="review"></textarea>
-
-                <label for="name" class="text-label">YourName (optional)</label>
-                <input type="text" id="name" name="name">
-
-                <input type="submit" name="post-review" value="Post Review">
-            </div>
-        </form>
-        <div class="bottom-stripe"></div>
-    </main>
-    <footer>
-        <p>
-            ©️<span id="currentYear">Year</span> 🥖 Kriston Mendenhall 🍪 California
-        </p>
-        <p id="lastModified">add last modified with JavaScript</p>
-    </footer>
+        <input type="submit" name="post-review" value="Post Review">
+      </div>
+    </form>
+    <div class="bottom-stripe"></div>
+  </main>
+  <footer>
+    <p>
+      ©️<span id="currentYear">Year</span> 🥖 Kriston Mendenhall 🍪 California
+    </p>
+    <p id="lastModified">add last modified with JavaScript</p>
+  </footer>
 </body>
+
+<script>
+  const referrals = [
+    { name: "internet search", value: "internet" },
+    { name: "AI search tool", value: "AI" },
+    { name: "friend/other referral", value: "referral" },
+    { name: "advertisement", value: "add" },
+    { name: "your mother", value: "mom" }
+  ];
+
+  const select = document.querySelector('#reference');
+
+  referrals.forEach(element => {
+    const option = document.createElement('option');
+    option.value = element.value;
+    option.textContent = element.name;
+    select.appendChild(option);
+  });
+</script>
 
 </html>
