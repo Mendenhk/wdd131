@@ -41,17 +41,17 @@
         display: none;
     }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-  /*navigation button and list for large view*/
-  .navigation ul {
-    display: flex;
-    flex-direction: row;
-  }
+    /*navigation button and list for large view*/
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
 
     .navigation a {
         display: block;
@@ -67,3 +67,13 @@
     }
 }
 
+/*------------ Large screens submit form--------------------*/
+.wf1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.stars-container {
+    justify-content: space-between;
+}

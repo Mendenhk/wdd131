@@ -1,5 +1,6 @@
 :root {
   --cambodia-blue: #032EA1;
+  --light-cambodia-blue: #5A7ED1;
   --cambodia-red: #E00025;
 }
 
@@ -179,4 +180,138 @@ footer p {
 
 .cls-3 {
   fill: #fff;
+}
+
+/*----------- FORM STYLING --------------*/
+.wf1 {
+  background: linear-gradient(var(--light-cambodia-blue), #FFFFFF);
+  padding: 1rem;
+}
+
+.wf1 label {
+  display: block;
+  /* changes from inline to block, putting each label on own line */
+
+}
+
+/* now to fix the "audience" and "software needed" text spacing for the radial and checkboxes */
+/* they are in div containers */
+.wf1 div {
+  /* using font size to match the labels above */
+  font-size: 0.9rem;
+}
+
+/* Now to move label text above and left justified of the input fields */
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 textarea,
+.wf1 select {
+  background-color: #eee;
+  display: block;
+  border: 1px solid #999;
+  border-radius: 6px;
+  /* padding added to make input areas at least 44px tall for touch */
+  padding: 0.75rem;
+  color: #555;
+  /* min width of 100% for phone screens, but limit to 400px for large screens */
+  width: 100%;
+  max-width: 400px;
+  /* the code below overides the default browser styling */
+  /* NOTE: this also removes the arrows in the dropdown so we add these back in html */
+  appearance: none;
+}
+
+/* now to make it so the checkboxes are not touching their text */
+.wf1 input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* styling the input button */
+.wf1 input[type="submit"] {
+  border: 1px solid #999;
+  padding: 1rem;
+  background-image: linear-gradient(var(--light-cambodia-blue), #aa4f4f);
+  color: #fff;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  /* now to correct the allignment of the submit button */
+  /* -1rem moves right, 2% width matches the inputs above (96% +2% + 2%) */
+  margin: 1rem 0 2rem 0;
+  box-shadow: 1px 1px 4px #999;
+}
+
+/*------------input text (not radio or checkbox)----------------*/
+.date-label,
+.select-label,
+.textarea-label,
+.text-label {
+  margin-top: 1rem;
+}
+
+
+/*---------------------radio buttons---------------------*/
+.stars-paragraph {
+  margin-top: 1rem;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stars-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------checkboxes---------------------*/
+.checkbox-paragraph {
+  margin-top: 1rem;
+}
+
+/*.wf1 had to be added to override the .wf1 rule above for blocking labels*/
+.wf1 .checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+
+/*-----------styling the required inputs--------------*/
+.wf1 input:required {
+  border-bottom: solid 8px red;
+}
+
+.wf1 select:required {
+  border-bottom: solid 8px red;
+}
+
+.wf1 input:required:valid {
+  border-bottom: solid 8px green;
+}
+
+.wf1 select:required:valid {
+  border-bottom: solid 8px green;
+}
+
+/*------------ Large screens --------------------*/
+@media (min-width: 720px) {
+
+  .wf1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .stars-container {
+    justify-content: space-between;
+  }
 }

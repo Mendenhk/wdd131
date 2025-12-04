@@ -33,3 +33,21 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+/*Code for filling in the dropdown*/
+const referrals = [
+    { name: "internet search", value: "internet" },
+    { name: "AI search tool", value: "AI" },
+    { name: "friend/other referral", value: "referral" },
+    { name: "advertisement", value: "add" },
+    { name: "your mother", value: "mom" }
+];
+
+const select = document.querySelector('#reference');
+
+referrals.forEach(element => {
+    const option = document.createElement('option');
+    option.value = element.value;
+    option.textContent = element.name;
+    select.appendChild(option);
+});
