@@ -133,7 +133,7 @@ footer {
 }
 
 /*.wf1 had to be added to override the .wf1 rule above for blocking labels*/
-.wf1 .checkbox-label {
+.wf1 .checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 0.2rem;
