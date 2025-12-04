@@ -122,7 +122,7 @@ footer {
   max-width: 400px;
 }
 
-.stars-container label {
+.stars-container div {
   display: flex;
   flex-direction: column;
 }

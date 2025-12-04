@@ -27,27 +27,31 @@
           <select name="product" id="product" required>
             <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
             <option value="" selected disabled>Select a Product &#9662;</option>
-            <!-- <option value="software">Software Development</option>
-            <option value="software">Creative Professional</option>
-            <option value="creative">Information Technology</option>
-            <option value="info">Data Professional</option>
-            <option value="data">Data Development</option>
-            <option value="construction">Construction</option>
-            <option value="manufacturing">Manufacturing</option>
-            <option value="business">Business Professoional</option>
-            <option value="security">Cyber Security</option> -->
           </select>
         </label>
 
         <p class="stars-paragraph">Overall Rating*</p>
         <div class="stars-container">
-          <label class="stars" for="one">⭐<input type="radio" name="rating" id="one" value="one" required></label>
-          <label class="stars" for="two">⭐⭐<input type="radio" name="rating" id="two" value="two" required></label>
-          <label class="stars" for="three">⭐⭐⭐<input type="radio" name="rating" id="three" value="three"
-              required></label>
-          <label class="stars" for="four">⭐⭐⭐⭐<input type="radio" name="rating" id="four" value="four" required></label>
-          <label class="stars" for="five">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="five" value="five"
-              required></label>
+          <div>
+            <label class="stars" for="one">⭐</label>
+            <input type="radio" name="rating" id="one" value="one" required>
+          </div>
+          <div>
+            <label class="stars" for="two">⭐⭐</label>
+            <input type="radio" name="rating" id="two" value="two" required>
+          </div>
+          <div>
+            <label class="stars" for="three">⭐⭐⭐</label>
+            <input type="radio" name="rating" id="three" value="three" required>
+          </div>
+          <div>
+            <label class="stars" for="four">⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" id="four" value="four" required>
+          </div>
+          <div>
+            <label class="stars" for="five">⭐⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" id="five" value="five" required>
+          </div>
         </div>
 
         <label class="date-label">Date of Installation*<input type="date" name="completed" id="date" required></label>
