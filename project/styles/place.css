@@ -21,48 +21,48 @@ header {
 
 /*CSS code for the menu button (#menu) and the nav list (.navigation) */
 ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
 
 nav a {
-    display: none;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: larger;
-    text-decoration: none;
+  display: none;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: larger;
+  text-decoration: none;
 }
 
 nav a:hover {
-    background-color: yellow;
-    color: red;
+  background-color: yellow;
+  color: red;
 }
 
 /* small view navigation.  #menu is the button */
 #menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    /*so it is see through*/
-    color: #000;
-    position: absolute;
-    /*since no relative container, this is absolute in relation to the page*/
-    top: 1rem;
-    right: 1rem;
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  /*so it is see through*/
+  color: #000;
+  position: absolute;
+  /*since no relative container, this is absolute in relation to the page*/
+  top: 1rem;
+  right: 1rem;
 }
 
 #menu::before {
-    content: '☰';
+  content: '☰';
 }
 
 #menu.open::before {
-    content: '❌';
+  content: '❌';
 }
 
 .open a {
-    display: block;
+  display: block;
 }
 
 h1 {
@@ -104,9 +104,14 @@ h2 {
 }
 
 /* svg styling: */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@600&display=swap');
-      .title { font-family: 'Cinzel', serif; font-size: 28px; fill: #D4AF37; font-weight: 700; }
-      /* .subtitle { font-family: 'Playfair Display', serif; font-size: 14px; fill: #003087; letter-spacing: 4px; } */
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  fill: #D4AF37;
+  font-weight: 700;
+}
+
+/* .subtitle { font-family: 'Playfair Display', serif; font-size: 14px; fill: #003087; letter-spacing: 4px; } */
 
 .logo-container svg {
   width: 300px;
