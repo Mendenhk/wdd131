@@ -4,14 +4,17 @@
     }
 
     .data,
-    .weather {
+    .weather,
+    .places-div {
         display: block;
         background-color: rgba(240, 240, 240, 0.8);
         box-shadow: 0 0 30px;
         position: absolute;
+        width: 300px;
     }
 
-    .data {
+    .data,
+    .places-div {
         top: 100px;
         left: 20px;
     }
@@ -35,6 +38,10 @@
         left: -23px;
         top: 8px;
         text-align: left;
+    }
+
+    .places-h2 {
+        width: 300px;
     }
 
     .weather svg {
