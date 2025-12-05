@@ -1,0 +1,16 @@
+<h1>Thank you for contacting us. We will reach out shortly!</h1>
+<p>We have been contacted <span id="contactCounter"></span> times.</p>
+<p><a href="siteplan.html">← back to the website</a></p>
+
+<script>
+    /*code for the contact.html file*/
+    /*This creates a local storage of the number of times page is visited */
+    let contactCount = Number(localStorage.getItem("contactCount")) || 0;
+    contactCount++;
+    localStorage.setItem("contactCount", contactCount);
+
+    const counterDisplay = document.querySelector("#contactCounter");
+    if (counterDisplay) {
+        counterDisplay.textContent = contactCount;
+    }
+</script>

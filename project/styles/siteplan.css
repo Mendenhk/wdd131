@@ -204,6 +204,7 @@ footer p {
 
 /* Now to move label text above and left justified of the input fields */
 .wf1 input[type="text"],
+.wf1 input[type="email"],
 .wf1 textarea,
 .wf1 select {
   background-color: #eee;
