@@ -322,17 +322,19 @@ textarea:required:valid {
 }
 
 /*-----------------------Show more/less buttons on Places.html-------------------*/
-.show-hide-temple {
+.show-hide-temple,
+.show-hide-park {
   text-align: center;
   border: 1px solid black;
 }
 
-.show-hide-temple:hover {
+.show-hide-temple:hover,
+.show-hide-park:hover {
   cursor: pointer;
 }
 
 /*show text with a toggle javaScript*/
-.temple-open {}
+/* .temple-open {} */
 
 .temple-open::before {
   content: 'There are more than 4000 anchient temples reported by the Ministry of Fine Arts, however, lidar technologies have discovered over 6000 and counting. These temples were originally built around Hinduism and have elaborate wall carvings portraying the Hinduism tradition, but were later transitioned to include Buddhism as the great Khmer Empire came into dominance.';

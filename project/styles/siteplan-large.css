@@ -3,6 +3,11 @@
         position: relative;
     }
 
+    .places-temple-container,
+    .places-park-container {
+        position: relative;
+    }
+
     .data,
     .weather,
     .places-temple,
@@ -14,10 +19,9 @@
         width: 300px;
     }
 
-    .data,
-    .places-temple {
-        top: 65px;
-        left: 15px;
+    .data {
+        top: 100px;
+        left: 20px;
     }
 
     .weather {
@@ -25,9 +29,14 @@
         bottom: 15px;
     }
 
+    .places-temple {
+        top: 20px;
+        left: 25px;
+    }
+
     .places-park {
-        top: 525px;
-        left: 20px;
+        top: 20px;
+        left: 25px;
     }
 
     .weather h2::after {
