@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131 - SitePlan</title>
-  <meta name="description" content="Final Project-Discover Cambodia-places to visit, food to eat, the people">
+  <meta name="description"
+    content="Final Project-Discover Cambodia-places to visit, food to eat, the people-Product Review">
   <meta name="author" content="Kriston Mendenhall">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,74 +60,64 @@
     <div class="red-stripe"></div>
     <h1 class="contact-h1">Contact Us</h1>
     <form class="wf1" method="get" action="review.html">
-      <h3>Feel free to let us know how we can improve our website</h3>
+      <!-- <h3>Feel free to let us know how we can improve our website</h3> -->
       <div>
+        <label for="fname" class="text-label">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+
+        <label for="lname" class="text-label">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+        <label for="email" class="text-label">email*</label>
+        <input type="text" id="email" name="email" placeholder="email" required>
+
         <label class="select-label" for="reference">Where did you hear about us?
-          <select name="reference" id="reference" required>
+          <select name="reference" id="reference">
             <!-- adding &#9662 below adds in the dropdown arrow that is removed when we remove browser default CSS -->
             <option value="" selected disabled>discovery tool &#9662;</option>
           </select>
         </label>
 
-        <p class="stars-paragraph">Overall Rating*</p>
+        <p class="checkbox-paragraph">Would you like more information?</p>
+
+        <div class="checkbox">
+          <input type="checkbox" id="news" name="news" value="yes">
+          <label for="news">Sign up for our NewsLetter</label>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="travel" name="travel" value="yes">
+          <label for="travel">Hear from our travel partners</label>
+        </div>
+
+        <label class="textarea-label" for="questions">How can we help?*</label>
+        <textarea id="questions" name="questions" placeholder="What questions do you have?" required></textarea>
+
+        <p class="stars-paragraph">How did we do (rate the website)</p>
         <div class="stars-container">
           <div>
             <label class="stars" for="one">⭐</label>
-            <input type="radio" name="rating" id="one" value="one" required>
+            <input type="radio" name="rating" id="one" value="one">
           </div>
           <div>
             <label class="stars" for="two">⭐⭐</label>
-            <input type="radio" name="rating" id="two" value="two" required>
+            <input type="radio" name="rating" id="two" value="two">
           </div>
           <div>
             <label class="stars" for="three">⭐⭐⭐</label>
-            <input type="radio" name="rating" id="three" value="three" required>
+            <input type="radio" name="rating" id="three" value="three">
           </div>
           <div>
             <label class="stars" for="four">⭐⭐⭐⭐</label>
-            <input type="radio" name="rating" id="four" value="four" required>
+            <input type="radio" name="rating" id="four" value="four">
           </div>
           <div>
             <label class="stars" for="five">⭐⭐⭐⭐⭐</label>
-            <input type="radio" name="rating" id="five" value="five" required>
+            <input type="radio" name="rating" id="five" value="five">
           </div>
         </div>
 
-        <label class="date-label" for="date">Date of Installation*</label>
-        <input type="date" name="date" id="date" required>
-
-        <p class="checkbox-paragraph">Which features did you find useful in the product?<br>(check all that
-          apply)
-          (optional)</p>
-
-        <div class="checkbox">
-          <input type="checkbox" id="durability" name="durability" value="yes">
-          <label for="durability">Durability</label>
-        </div>
-
-        <div class="checkbox">
-          <input type="checkbox" id="ease" name="ease" value="yes">
-          <label for="ease">Ease of Use</label>
-        </div>
-
-        <div class="checkbox">
-          <input type="checkbox" id="performance" name="performance" value="yes">
-          <label for="performance">Performance</label>
-        </div>
-
-        <div class="checkbox">
-          <input type="checkbox" id="design" name="design" value="yes">
-          <label for="design">Design</label>
-        </div>
-
-        <label class="textarea-label" for="review">Written Review <span>(optional)</span></label>
-
-        <textarea id="review" name="review"></textarea>
-
-        <label for="name" class="text-label">YourName (optional)</label>
-        <input type="text" id="name" name="name">
-
-        <input type="submit" name="post-review" value="Post Review">
+        <input type="submit" name="contact" value="Contact Us">
       </div>
     </form>
     <div class="bottom-stripe"></div>
@@ -139,6 +130,7 @@
   </footer>
 </body>
 
+<!-- this script was added here because the defer above was causing this script to not run -->
 <script>
   const referrals = [
     { name: "internet search", value: "internet" },

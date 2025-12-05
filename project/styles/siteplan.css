@@ -2,6 +2,7 @@
   --cambodia-blue: #032EA1;
   --light-cambodia-blue: #5A7ED1;
   --cambodia-red: #E00025;
+  --placeholder: lightgray;
 }
 
 * {
@@ -203,7 +204,6 @@ footer p {
 
 /* Now to move label text above and left justified of the input fields */
 .wf1 input[type="text"],
-.wf1 input[type="date"],
 .wf1 textarea,
 .wf1 select {
   background-color: #eee;
@@ -242,11 +242,15 @@ footer p {
 }
 
 /*------------input text (not radio or checkbox)----------------*/
-.date-label,
 .select-label,
 .textarea-label,
 .text-label {
   margin-top: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder);
 }
 
 
@@ -285,20 +289,14 @@ input[type="checkbox"] {
 }
 
 
-/*-----------styling the required inputs--------------*/
-.wf1 input:required {
+/*-----------styling the "required" inputs--------------*/
+.wf1 input:required,
+textarea:required {
   border-bottom: solid 8px red;
 }
 
-.wf1 select:required {
-  border-bottom: solid 8px red;
-}
-
-.wf1 input:required:valid {
-  border-bottom: solid 8px green;
-}
-
-.wf1 select:required:valid {
+.wf1 input:required:valid,
+textarea:required:valid {
   border-bottom: solid 8px green;
 }
 
