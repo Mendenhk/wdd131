@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 /*Show More/Less Button-temple */
 const templeParagraph = document.querySelector('.show-hide-temple');
 const templeText = document.querySelector('.temple-text');

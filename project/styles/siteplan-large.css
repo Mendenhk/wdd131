@@ -9,6 +9,13 @@
     position: relative;
   }
 
+  .show-hide-temple,
+  .show-hide-park,
+  .show-hide-fcity {
+    padding: 0;
+    margin: 0;
+  }
+
   .data,
   .weather,
   .places-temple,
@@ -20,6 +27,11 @@
     position: absolute;
     width: 300px;
     padding-top: 3.5rem;
+  }
+
+  .places-temple,
+  .places-park,
+  .places-fcity {
     top: 20px;
     left: 25px;
   }
@@ -82,28 +94,21 @@
   /* .bottom-stripe {
         display: none;
     } */
-}
 
-/*------------ Large screens submit form--------------------*/
-.wf1 {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+  /*------------ Large screens submit form--------------------*/
+  .wf1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
-.stars-container {
-  justify-content: space-between;
-}
+  .stars-container {
+    justify-content: space-between;
+  }
 
-/*------------ Large screens places.html----------------------*/
-/*places div holding photos*/
-.places {
-  margin-top: 2rem;
-}
+  /*places div holding photos*/
+  .places {
+    margin-top: 2rem;
+  }
 
-.show-hide-temple,
-.show-hide-park,
-.show-hide-fcity {
-  padding-top: 0;
-  padding-bottom: 0;
 }
