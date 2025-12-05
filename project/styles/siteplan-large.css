@@ -111,4 +111,8 @@
     margin-top: 2rem;
   }
 
+  .data,
+  .weather {
+    display: grid;
+  }
 }
