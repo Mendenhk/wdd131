@@ -1,8 +1,5 @@
-// =============================================
-// scripts/siteplan.js  (FINAL WORKING VERSION)
-// =============================================
 
-// 1. Wind Chill – only runs on pages that have .wind-chill
+//Wind Chill – only runs on pages that have .wind-chill
 const windChillElement = document.querySelector('.wind-chill');
 if (windChillElement) {
     const temperature = 31;
@@ -21,7 +18,7 @@ function calculateWindChill(temperature, windSpeed) {
     return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
 }
 
-// 2. Footer – current year + last modified (safe version)
+// Footer – current year + last modified (safe version)
 const yearElement = document.querySelector("#currentYear");
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
@@ -32,7 +29,7 @@ if (lastModifiedElement) {
     lastModifiedElement.textContent = "Last Modification: " + document.lastModified;
 }
 
-// 3. Hamburger Menu – always runs
+// Hamburger Menu – always runs
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -43,7 +40,7 @@ if (hamButton && navigation) {
     });
 }
 
-// 4. Fill the dropdown – only runs on pages that have #reference
+// Fill the dropdown – only runs on pages that have #reference
 document.addEventListener('DOMContentLoaded', () => {
     const select = document.querySelector('#reference');
     if (select) {
