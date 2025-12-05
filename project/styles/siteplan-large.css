@@ -100,3 +100,10 @@
 .places {
   margin-top: 2rem;
 }
+
+.show-hide-temple,
+.show-hide-park,
+.show-hide-fcity {
+  padding-top: 0;
+  padding-bottom: 0;
+}

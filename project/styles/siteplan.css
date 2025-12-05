@@ -321,6 +321,8 @@ textarea:required:valid {
 .show-hide-fcity {
   text-align: center;
   border: 1px solid black;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .show-hide-temple:hover,
