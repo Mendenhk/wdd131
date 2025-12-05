@@ -1,107 +1,102 @@
 @media (min-width: 740px) {
-    main {
-        position: relative;
-    }
+  main {
+    position: relative;
+  }
 
-    .places-temple-container,
-    .places-park-container {
-        position: relative;
-    }
+  .places-temple-container,
+  .places-park-container,
+  .places-fcity-container {
+    position: relative;
+  }
 
-    .data,
-    .weather,
-    .places-temple,
-    .places-park {
-        display: block;
-        background-color: rgba(240, 240, 240, 0.8);
-        box-shadow: 0 0 30px;
-        position: absolute;
-        width: 300px;
-    }
+  .data,
+  .weather,
+  .places-temple,
+  .places-park,
+  .places-fcity {
+    display: block;
+    background-color: rgba(240, 240, 240, 0.8);
+    box-shadow: 0 0 30px;
+    position: absolute;
+    width: 300px;
+    padding-top: 3.5rem;
+    top: 20px;
+    left: 25px;
+  }
 
-    .data {
-        top: 100px;
-        left: 20px;
-    }
+  .data {
+    top: 100px;
+    left: 20px;
+  }
 
-    .weather {
-        right: 20px;
-        bottom: 15px;
-    }
+  .weather {
+    right: 20px;
+    bottom: 15px;
+  }
 
-    .places-temple {
-        top: 20px;
-        left: 25px;
-    }
+  .weather h2::after {
+    content: "   🌤️";
+    margin-left: 1rem;
+  }
 
-    .places-park {
-        top: 20px;
-        left: 25px;
-    }
+  h2 {
+    background-color: var(--cambodia-red);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    width: 200px;
+    position: absolute;
+    left: -23px;
+    top: 8px;
+    text-align: left;
+  }
 
-    .weather h2::after {
-        content: "   🌤️";
-        margin-left: 1rem;
-    }
+  .places-h2 {
+    width: 300px;
+  }
 
-    h2 {
-        background-color: var(--cambodia-red);
-        color: white;
-        padding: 0.5rem 0.5rem;
-        width: 200px;
-        position: absolute;
-        left: -23px;
-        top: 8px;
-        text-align: left;
-    }
+  .weather svg {
+    display: none;
+  }
 
-    .places-h2 {
-        width: 300px;
-    }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .weather svg {
-        display: none;
-    }
+  /*navigation button and list for large view*/
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+  }
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .navigation a {
+    display: block;
+    /* flex: 1 1 100%; */
+  }
 
-    /*navigation button and list for large view*/
-    .navigation ul {
-        display: flex;
-        flex-direction: row;
-    }
+  #menu {
+    display: none;
+  }
 
-    .navigation a {
-        display: block;
-        /* flex: 1 1 100%; */
-    }
-
-    #menu {
-        display: none;
-    }
-
-    /* .bottom-stripe {
+  /* .bottom-stripe {
         display: none;
     } */
 }
 
 /*------------ Large screens submit form--------------------*/
 .wf1 {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .stars-container {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 /*------------ Large screens places.html----------------------*/
 /*places div holding photos*/
 .places {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }

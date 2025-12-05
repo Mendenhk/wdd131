@@ -100,12 +100,6 @@ img {
   border-top: solid 2px rgba(211, 211, 211, 0.5);
 }
 
-/*drop down info for places.html*/
-.places-temple,
-.places-park {
-  padding: 3.5rem 1rem 1rem 1rem;
-}
-
 h2 {
   grid-column: 1 / -1;
   margin: 0 auto;
@@ -323,13 +317,15 @@ textarea:required:valid {
 
 /*-----------------------Show more/less buttons on Places.html-------------------*/
 .show-hide-temple,
-.show-hide-park {
+.show-hide-park,
+.show-hide-fcity {
   text-align: center;
   border: 1px solid black;
 }
 
 .show-hide-temple:hover,
-.show-hide-park:hover {
+.show-hide-park:hover,
+.show-hide-fcity:hover {
   cursor: pointer;
 }
 
@@ -342,4 +338,8 @@ textarea:required:valid {
 
 .park-open::before {
   content: 'Khnang Phnum Park, perched on sacred Phnom Yat hill in Pailin Province, offers sweeping views of the Cardamom Mountains and lush forest. Climb about 200 steps past colorful temples and giant granite boulders to reach a huge cliff-carved reclining Buddha glowing gold at sunset. In the rainy season, several beautiful waterfalls cascade down the hillside, creating refreshing pools and the soothing sound of falling water. A perfect spot for photos, cool breezes, and peaceful escape.';
+}
+
+.fcity-open::before {
+  content: 'Near the city of Seam Reap, bordering the immense Tonlé Sap lake, are several communities living in houses and buildings built on massive stilts. The photos here show one of those city/communities during the dry season. During wet season the Tonlé Sap lake rises 30-33 feet, and the water level can rises nearly to the top of these stilts. Transportation during wet season is entirely by boat.';
 }

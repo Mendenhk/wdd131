@@ -87,3 +87,16 @@ parkParagraph.addEventListener('click', () => {
     parkParagraph.textContent = '↓Show more↓';
   }
 });
+
+/*Show More/Less Button-fcity */
+const fcityParagraph = document.querySelector('.show-hide-fcity');
+const fcityText = document.querySelector('.fcity-text');
+fcityParagraph.addEventListener('click', () => {
+  //adds or removes class.toggle="red-text", which is changed with CSS
+  fcityText.classList.toggle('fcity-open');
+  if (fcityText.classList.contains('fcity-open')) {
+    fcityParagraph.textContent = '↑Hide↑';
+  } else {
+    fcityParagraph.textContent = '↓Show more↓';
+  }
+});
