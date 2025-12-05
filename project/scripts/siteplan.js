@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/*Show More/Less Button */
+/*Show More/Less Button-temple */
 const templeParagraph = document.querySelector('.show-hide-temple');
 const templeText = document.querySelector('.temple-text');
 templeParagraph.addEventListener('click', () => {
@@ -72,5 +72,18 @@ templeParagraph.addEventListener('click', () => {
     templeParagraph.textContent = '↑Hide↑';
   } else {
     templeParagraph.textContent = '↓Show more↓';
+  }
+});
+
+/*Show More/Less Button-park */
+const parkParagraph = document.querySelector('.show-hide-park');
+const parkText = document.querySelector('.park-text');
+parkParagraph.addEventListener('click', () => {
+  //adds or removes class.toggle="red-text", which is changed with CSS
+  parkText.classList.toggle('park-open');
+  if (parkText.classList.contains('park-open')) {
+    parkParagraph.textContent = '↑Hide↑';
+  } else {
+    parkParagraph.textContent = '↓Show more↓';
   }
 });

@@ -339,3 +339,7 @@ textarea:required:valid {
 .temple-open::before {
   content: 'There are more than 4000 anchient temples reported by the Ministry of Fine Arts, however, lidar technologies have discovered over 6000 and counting. These temples were originally built around Hinduism and have elaborate wall carvings portraying the Hinduism tradition, but were later transitioned to include Buddhism as the great Khmer Empire came into dominance.';
 }
+
+.park-open::before {
+  content: 'Khnang Phnum Park, perched on sacred Phnom Yat hill in Pailin Province, offers sweeping views of the Cardamom Mountains and lush forest. Climb about 200 steps past colorful temples and giant granite boulders to reach a huge cliff-carved reclining Buddha glowing gold at sunset. In the rainy season, several beautiful waterfalls cascade down the hillside, creating refreshing pools and the soothing sound of falling water. A perfect spot for photos, cool breezes, and peaceful escape.';
+}
