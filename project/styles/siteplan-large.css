@@ -5,7 +5,8 @@
 
     .data,
     .weather,
-    .places-div {
+    .places-temple,
+    .places-park {
         display: block;
         background-color: rgba(240, 240, 240, 0.8);
         box-shadow: 0 0 30px;
@@ -14,14 +15,19 @@
     }
 
     .data,
-    .places-div {
-        top: 100px;
-        left: 20px;
+    .places-temple {
+        top: 65px;
+        left: 15px;
     }
 
     .weather {
         right: 20px;
         bottom: 15px;
+    }
+
+    .places-park {
+        top: 525px;
+        left: 20px;
     }
 
     .weather h2::after {
@@ -69,9 +75,9 @@
         display: none;
     }
 
-    .bottom-stripe {
+    /* .bottom-stripe {
         display: none;
-    }
+    } */
 }
 
 /*------------ Large screens submit form--------------------*/
@@ -83,4 +89,10 @@
 
 .stars-container {
     justify-content: space-between;
+}
+
+/*------------ Large screens places.html----------------------*/
+/*places div holding photos*/
+.places {
+    margin-top: 2rem;
 }

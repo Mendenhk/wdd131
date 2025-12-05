@@ -77,10 +77,10 @@ h1 {
   background-color: var(--cambodia-red);
 }
 
-.bottom-stripe {
+/* .bottom-stripe {
   padding: 0.25rem;
   background-color: var(--cambodia-blue);
-}
+} */
 
 img {
   display: block;
@@ -96,12 +96,14 @@ img {
   padding: 3.5rem 1rem 1rem 1rem;
 }
 
-.places-div {
-  padding: 3.5rem 1rem 1rem 1rem;
-}
-
 .weather {
   border-top: solid 2px rgba(211, 211, 211, 0.5);
+}
+
+/*drop down info for places.html*/
+.places-temple,
+.places-park {
+  padding: 3.5rem 1rem 1rem 1rem;
 }
 
 h2 {
