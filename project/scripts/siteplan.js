@@ -66,38 +66,47 @@ document.addEventListener('DOMContentLoaded', () => {
 /*Show More/Less Button-temple */
 const templeParagraph = document.querySelector('.show-hide-temple');
 const templeText = document.querySelector('.temple-text');
-templeParagraph.addEventListener('click', () => {
-  //adds or removes class.toggle="red-text", which is changed with CSS
-  templeText.classList.toggle('temple-open');
-  if (templeText.classList.contains('temple-open')) {
-    templeParagraph.textContent = '↑Hide↑';
-  } else {
-    templeParagraph.textContent = '↓Show more↓';
-  }
-});
+
+if (templeParagraph && templeText) {
+  templeParagraph.addEventListener('click', () => {
+    //adds or removes class.toggle="red-text", which is changed with CSS
+    templeText.classList.toggle('temple-open');
+    if (templeText.classList.contains('temple-open')) {
+      templeParagraph.textContent = '↑Hide↑';
+    } else {
+      templeParagraph.textContent = '↓Show more↓';
+    }
+  });
+}
 
 /*Show More/Less Button-park */
 const parkParagraph = document.querySelector('.show-hide-park');
 const parkText = document.querySelector('.park-text');
-parkParagraph.addEventListener('click', () => {
-  //adds or removes class.toggle="red-text", which is changed with CSS
-  parkText.classList.toggle('park-open');
-  if (parkText.classList.contains('park-open')) {
-    parkParagraph.textContent = '↑Hide↑';
-  } else {
-    parkParagraph.textContent = '↓Show more↓';
-  }
-});
+
+if (parkParagraph && parkText) {
+  parkParagraph.addEventListener('click', () => {
+    //adds or removes class.toggle="red-text", which is changed with CSS
+    parkText.classList.toggle('park-open');
+    if (parkText.classList.contains('park-open')) {
+      parkParagraph.textContent = '↑Hide↑';
+    } else {
+      parkParagraph.textContent = '↓Show more↓';
+    }
+  });
+}
 
 /*Show More/Less Button-fcity */
 const fcityParagraph = document.querySelector('.show-hide-fcity');
 const fcityText = document.querySelector('.fcity-text');
-fcityParagraph.addEventListener('click', () => {
-  //adds or removes class.toggle="red-text", which is changed with CSS
-  fcityText.classList.toggle('fcity-open');
-  if (fcityText.classList.contains('fcity-open')) {
-    fcityParagraph.textContent = '↑Hide↑';
-  } else {
-    fcityParagraph.textContent = '↓Show more↓';
-  }
-});
+
+if (fcityParagraph && fcityText) {
+  fcityParagraph.addEventListener('click', () => {
+    //adds or removes class.toggle="red-text", which is changed with CSS
+    fcityText.classList.toggle('fcity-open');
+    if (fcityText.classList.contains('fcity-open')) {
+      fcityParagraph.textContent = '↑Hide↑';
+    } else {
+      fcityParagraph.textContent = '↓Show more↓';
+    }
+  });
+}
