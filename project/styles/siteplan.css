@@ -57,6 +57,7 @@ nav a:hover {
 
 #menu::before {
   content: '☰';
+  color: white;
 }
 
 #menu.open::before {
