@@ -66,7 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
 /*Show More/Less Button-temple */
 const templeParagraph = document.querySelector('.show-hide-temple');
 const templeText = document.querySelector('.temple-text');
-
+/* if statements added as my siteplan.html and contact.html gave errors.
+ the javascript was trying to add eventlisteners to elements that don't exist
+ on these pages*/
 if (templeParagraph && templeText) {
   templeParagraph.addEventListener('click', () => {
     //adds or removes class.toggle="red-text", which is changed with CSS
