@@ -1,4 +1,3 @@
-<!-- Next: create "click for more" button -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,9 +48,9 @@
     <nav class="navigation">
       <ul>
         <li><a href="siteplan.html" id="home">Home</a></li>
-        <li><a href="#" id="places">Places to Visit</a></li>
-        <!-- <li><a href="#" id="food">Food to Eat</a></li> -->
-        <!-- <li><a href="#" id="people">The People</a></li> -->
+        <li><a href="places.html" id="places">Places to Visit</a></li>
+        <!-- <li><a href="food.html" id="food">Food to Eat</a></li> -->
+        <!-- <li><a href="people.html" id="people">The People</a></li> -->
         <li><a href="contact.html" id="contact">Contact Us</a></li>
       </ul>
     </nav>
@@ -69,7 +68,9 @@
       <!-- <div class="bottom-stripe"></div> -->
       <div class="places-temple">
         <h2 class="places-h2">Anchient Temples</h2>
-        <p class="temple-text"></p>
+        <!-- aria-alive="polite" lets the screen reader know that this will be filled by JavaScript -->
+        aria-alive="polite" lets the screen reader know that this will be filled by JavaScript
+        <p class="temple-text" aria-live="polite"></p>
         <p class="show-hide-temple">↓Show more↓</p>
       </div>
     </div>
@@ -84,7 +85,7 @@
       <!-- <div class="bottom-stripe"></div> -->
       <div class="places-park">
         <h2 class="places-h2">Khnang Phnum Park</h2>
-        <p class="park-text"></p>
+        <p class="park-text" aria-live="polite"></p>
         <p class="show-hide-park">↓Show more↓</p>
       </div>
     </div>
@@ -99,7 +100,7 @@
       <!-- <div class="bottom-stripe"></div> -->
       <div class="places-fcity">
         <h2 class="places-h2">Floating City</h2>
-        <p class="fcity-text"></p>
+        <p class="fcity-text" aria-live="polite"></p>
         <p class="show-hide-fcity">↓Show more↓</p>
       </div>
     </div>
