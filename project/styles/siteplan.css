@@ -181,7 +181,8 @@ footer p {
 /*----------- FORM STYLING --------------*/
 .wf1 {
   background: linear-gradient(var(--light-cambodia-blue), #FFFFFF);
-  padding: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .wf1 label {
