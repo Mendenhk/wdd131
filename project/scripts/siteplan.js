@@ -112,3 +112,37 @@ if (fcityParagraph && fcityText) {
     }
   });
 }
+
+// Visual crossing weather API for extracting temp, conditions, and wind speed
+const API_KEY = "QFQWFF8ERZY3CTXNENCCGK6BF";
+const LOCATION = "Phnom Penh,Cambodia";
+
+const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${encodeURIComponent(
+  LOCATION
+)}?unitGroup=metric&include=current&key=${API_KEY}&contentType=json`;
+
+async function getWeather() {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    const current = data.currentConditions;
+
+    const temperature = current.temp;
+    const conditions = current.conditions;
+    const windSpeed = current.windspeed;
+
+    console.log(`Temperature: ${temperature} °C`);
+    console.log(`Conditions: ${conditions}`);
+    console.log(`Wind Speed: ${windSpeed} km/h`);
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+  }
+}
+
+getWeather();
