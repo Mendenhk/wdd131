@@ -40,9 +40,9 @@ async function getWeather() {
     const windChillElement = document.querySelector('.wind-chill');
     let windChill;
 
-    temperature.textContent = `${vcTemperature}°C`
+    temperature.textContent = `${vcTemperature}°C / ${((vcTemperature * 9/5) +35).toFixed(1)}°F`
     conditions.textContent = `${vcConditions}`;
-    windSpeed.textContent = `${vcWindSpeed} km/h`;
+    windSpeed.textContent = `${vcWindSpeed} km/h / ${(vcWindSpeed * 0.621371).toFixed(1)} mph`;
 
     if (vcTemperature <= 10 && vcWindSpeed > 4.8) {
     windChill = calculateWindChill(vcTemperature, vcWindSpeed);
@@ -63,19 +63,6 @@ async function getWeather() {
 getWeather();
 
 
-
-/*Wind Chill – only runs on pages that have .wind-chill*/
-// const windChillElement = document.querySelector('.wind-chill');
-// const temperature = 31;
-// const windSpeed = 5;
-// let windChill;
-
-// if (temperature <= 10 && windSpeed > 4.8) {
-// windChill = calculateWindChill(temperature, windSpeed);
-// } else {
-// windChill = temperature;
-// }
-// windChillElement.textContent = `${windChill.toFixed(1)}°C`;
 
 function calculateWindChill(temperature, windSpeed) {
   return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
