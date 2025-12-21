@@ -35,8 +35,13 @@ async function getWeather() {
 
     //adding above temp, cond, and windspeed to the HTML, and thus the page
     const temperature = document.querySelector('.temperature');
+    const conditions = document.querySelector('.conditions');
+    const windSpeed = document.querySelector('.windSpeed');
+    const windChillElement = document.querySelector('.wind-chill');
 
     temperature.textContent = `${vcTemperature}°C`
+    conditions.textContent = `${vcConditions}`;
+    windSpeed.textContent = `${vcWindSpeed} km/h`;
 
   } catch (error) {
     console.error("Error fetching weather data:", error);
@@ -48,17 +53,17 @@ getWeather();
 
 
 /*Wind Chill – only runs on pages that have .wind-chill*/
-const windChillElement = document.querySelector('.wind-chill');
-  const temperature = 31;
-  const windSpeed = 5;
-  let windChill;
+// const windChillElement = document.querySelector('.wind-chill');
+const temperature = 31;
+const windSpeed = 5;
+let windChill;
 
-  if (temperature <= 10 && windSpeed > 4.8) {
-    windChill = calculateWindChill(temperature, windSpeed);
-  } else {
-    windChill = temperature;
-  }
-  windChillElement.textContent = `${windChill.toFixed(1)}°C`;
+if (temperature <= 10 && windSpeed > 4.8) {
+windChill = calculateWindChill(temperature, windSpeed);
+} else {
+windChill = temperature;
+}
+windChillElement.textContent = `${windChill.toFixed(1)}°C`;
 
 function calculateWindChill(temperature, windSpeed) {
   return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
