@@ -106,6 +106,14 @@ h2 {
   margin: 0 auto;
 }
 
+/*------------------ weather svg for small screens --------------------*/
+.weatherSVG {
+  grid-column: 1/-1;
+  padding: auto 0
+  width: 50px;
+  height: 50px;
+}
+
 /* svg styling: */
 .title {
   font-family: 'Cinzel', serif;
@@ -158,25 +166,6 @@ footer p {
   color: yellow;
 }
 
-/*style downloaded for the svg*/
-.cls-1 {
-  fill: #f8b62d;
-}
-
-.cls-1,
-.cls-2 {
-  stroke: #231815;
-  stroke-miterlimit: 10;
-}
-
-.cls-2,
-.cls-4 {
-  fill: #231815;
-}
-
-.cls-3 {
-  fill: #fff;
-}
 
 /*----------- FORM STYLING --------------*/
 .wf1 {

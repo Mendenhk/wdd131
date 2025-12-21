@@ -51,6 +51,10 @@ async function getWeather() {
     }
     windChillElement.textContent = `${windChill.toFixed(1)}°C`;
 
+    const svgElement = document.querySelector('.weatherSVG');
+    svgElement.src = getWeatherSVG(vcConditions);
+    svgElement.alt = vcConditions;
+
   } catch (error) {
     console.error("Error fetching weather data:", error);
   }
@@ -81,12 +85,11 @@ function calculateWindChill(temperature, windSpeed) {
 
 /*-------------------- Weather svg's ---------------------*/
 
-
 const conditionsSVG = {
-    thunder: "image/thunder.svg",
+    thunder: "images/thunder.svg",
     rain: "images/rain.svg",
     partly: "images/partly.svg",
-    cloud: "images/cloud.svg",
+    cloud: "images/cloudy.svg",
     clear: "images/clear.svg",
     fog: "images/fog.svg",
     default: "images/default.svg"
@@ -101,5 +104,5 @@ function getWeatherSVG(conditions) {
   if (conditions.includes("Cloud") || conditions.includes("Overcast")) return conditionsSVG.cloud;
   if (conditions.includes("Clear") || (conditions.includes("Sun"))) return conditionsSVG.clear;
   if (conditions.includes("Fog") || conditions.includes("Mist")) return conditionsSVG.fog;
-  return "🌡️";
+  return conditionsSVG.fog;
 }
