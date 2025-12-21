@@ -121,19 +121,24 @@ const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/s
   LOCATION
 )}?unitGroup=metric&include=current&key=${API_KEY}&contentType=json`;
 
+//async fiunction allows other functions to run while it is processing - doesn't lock up the page
 async function getWeather() {
+
+  //try works together with catch to deal with errors rather than crashing the system
   try {
+    //await pauses the function until data arrives.
     const response = await fetch(url);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
+    //await pauses the function until data arrives.
     const data = await response.json();
 
     const current = data.currentConditions;
 
-    const temperature = current.temp;
+    const temperature = curre nt.temp;
     const conditions = current.conditions;
     const windSpeed = current.windspeed;
 
