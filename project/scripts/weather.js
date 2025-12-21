@@ -38,10 +38,18 @@ async function getWeather() {
     const conditions = document.querySelector('.conditions');
     const windSpeed = document.querySelector('.windSpeed');
     const windChillElement = document.querySelector('.wind-chill');
+    let windChill;
 
     temperature.textContent = `${vcTemperature}°C`
     conditions.textContent = `${vcConditions}`;
     windSpeed.textContent = `${vcWindSpeed} km/h`;
+
+    if (vcTemperature <= 10 && vcWindSpeed > 4.8) {
+    windChill = calculateWindChill(vcTemperature, vcWindSpeed);
+    } else {
+    windChill = vcTemperature;
+    }
+    windChillElement.textContent = `${windChill.toFixed(1)}°C`;
 
   } catch (error) {
     console.error("Error fetching weather data:", error);
@@ -54,17 +62,44 @@ getWeather();
 
 /*Wind Chill – only runs on pages that have .wind-chill*/
 // const windChillElement = document.querySelector('.wind-chill');
-const temperature = 31;
-const windSpeed = 5;
-let windChill;
+// const temperature = 31;
+// const windSpeed = 5;
+// let windChill;
 
-if (temperature <= 10 && windSpeed > 4.8) {
-windChill = calculateWindChill(temperature, windSpeed);
-} else {
-windChill = temperature;
-}
-windChillElement.textContent = `${windChill.toFixed(1)}°C`;
+// if (temperature <= 10 && windSpeed > 4.8) {
+// windChill = calculateWindChill(temperature, windSpeed);
+// } else {
+// windChill = temperature;
+// }
+// windChillElement.textContent = `${windChill.toFixed(1)}°C`;
 
 function calculateWindChill(temperature, windSpeed) {
   return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+}
+
+
+
+/*-------------------- Weather svg's ---------------------*/
+
+
+const conditionsSVG = {
+    thunder: "image/thunder.svg",
+    rain: "images/rain.svg",
+    partly: "images/partly.svg",
+    cloud: "images/cloud.svg",
+    clear: "images/clear.svg",
+    fog: "images/fog.svg",
+    default: "images/default.svg"
+}
+
+//in this function, "includes" is used because the weather api has many types of conditions.
+//this serves to cover all types with as little code as possible.
+function getWeatherSVG(conditions) {
+  if (conditions.includes("Thunder")) return conditionsSVG.thunder;
+  if (conditions.includes("Rain")) return conditionsSVG.rain;
+  if (conditions.includes("Partly")) return conditionsSVG.partly;
+  if (conditions.includes("Cloud") || conditions.includes("Overcast")) return conditionsSVG.cloud;
+  if (conditions.includes("Clear") || (conditions.includes("Sun"))) return conditionsSVG.clear;
+  if (conditions.includes("Fog") || conditions.includes("Mist")) return conditionsSVG.fog;
+  return "🌡️";
 }
